@@ -31,7 +31,7 @@ def weather(city):
     response = requests.get(url=url_gif, params=params)
     gif_url = str(response.json()['data'][0]['images']['original']['url'])
     pic = "<br><img src=" + gif_url + ">"
-    return 'Temperature in ' + city + 'is:' + temperature + pic
+    return 'Temperature in ' + city + ' is:' + temperature + pic
 
 
 if __name__ == "__main__":
